@@ -1,6 +1,6 @@
 ---
 templateKey: feature
-title: Show Pubs as Closed
+title: "Feature: Show Pubs as Closed"
 date: 2021-04-29T15:01:39.440Z
 ---
 Feature: Show Pubs as closed
