@@ -11,12 +11,11 @@ class FeatureRoll extends React.Component {
       <div>
         {posts &&
           posts.map(({ node: post }) => (
-            <Link
-              className="is-size-4"
-              to={post.fields.slug}
-            >
-              {post.frontmatter.title}
-            </Link>
+            <div>
+              <Link className="is-size-4" to={post.fields.slug}>
+                {post.frontmatter.title}
+              </Link>
+            </div>
           ))}
       </div>
     );
