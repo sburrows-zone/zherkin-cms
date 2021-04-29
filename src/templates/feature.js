@@ -1,5 +1,5 @@
 import React from "react";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 import { Helmet } from "react-helmet";
 import { graphql } from "gatsby";
 import Layout from "../components/Layout";
@@ -11,15 +11,23 @@ export const FeatureTemplate = ({
   title,
   helmet,
 }) => {
-  const PostContent = contentComponent || Content;
+  const FeatureContent = contentComponent || Content;
 
   return (
     <section className="section">
-      <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
-        {title}
-      </h1>
-      {helmet || ""}
-      <PostContent content={content} />
+      <div className="container content">
+        <div className="columns">
+          <div className="column is-10 is-offset-1">
+            <h1 className="title is-size-2 has-text-weight-bold is-bold-light">
+              {title}
+            </h1>
+
+            <div className="feature-content">
+              <FeatureContent content={content} />
+            </div>
+          </div>
+        </div>
+      </div>
     </section>
   );
 };
@@ -38,7 +46,6 @@ const Feature = ({ data }) => {
             <title>{`${post.frontmatter.title}`}</title>
           </Helmet>
         }
-        tags={post.frontmatter.tags}
         title={post.frontmatter.title}
       />
     </Layout>

@@ -1,5 +1,5 @@
 ---
-templateKey: blog-post
+templateKey: feature
 title: "Feature: Delivery Link"
 date: 2021-04-29T13:29:10.328Z
 description: /
