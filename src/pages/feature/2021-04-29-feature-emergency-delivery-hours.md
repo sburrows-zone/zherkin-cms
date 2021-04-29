@@ -42,7 +42,7 @@ And it is clear there are two sets of serving hours in a day
 
 @serving-times; @bau-113
 Scenario: Serving hours box can open to show whole week
-Given a venue has a menu page
+Given a venue has no menu page
 And the venue has valid serving hours in Heart
 When the serving hours module is opened
 Then the serving hours for the whole week are shown
