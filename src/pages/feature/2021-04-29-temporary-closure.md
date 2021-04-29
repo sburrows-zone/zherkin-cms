@@ -1,6 +1,6 @@
 ---
 templateKey: feature
-title: "Temporary Closure "
+title: "Feature: Temporary Closure "
 date: 2021-04-29T15:01:48.091Z
 ---
 @bau-378 @dashboard 
